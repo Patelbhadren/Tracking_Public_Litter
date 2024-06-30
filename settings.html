@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Garbage Management System</title>
+    <link rel="stylesheet" href="settings.css"> 
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+    </header>
+    <main>
+        <section class="settings">
+            <h2>User Profile</h2>
+            <form action="update_profile.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="admin" disabled>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="admin@example.com">
+                <br><br>
+                <input type="submit" value="Save Changes">
+            </form>
+        </section>
+        <section class="settings">
+            <h2>Change Password</h2>
+            <form action="change_password.php" method="POST">
+                <label for="current_password">Current Password:</label>
+                <input type="password" id="current_password" name="current_password">
+                <br><br>
+                <label for="new_password">New Password:</label>
+                <input type="password" id="new_password" name="new_password">
+                <br><br>
+                <label for="confirm_password">Confirm New Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+                <br><br>
+                <input type="submit" value="Change Password">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> Garbage Management System</p>
+    </footer>
+</body>
+</html>

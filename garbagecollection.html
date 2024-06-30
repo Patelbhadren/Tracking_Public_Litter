@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Collection Management System</title>
+    <link rel="stylesheet" href="garbagecollection.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Garbage Collection </h1>
+        
+        <div class="form-container">
+            <h2>Schedule a Pickup</h2>
+            <form id="pickupForm">
+                <label for="clientName">Client Name:</label>
+                <input type="text" id="clientName" name="clientName" required>
+
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+
+                <label for="pickupAddress">Pickup Address:</label>
+                <input type="text" id="pickupAddress" name="pickupAddress" required>
+
+                <label for="itemDescription">Item Description:</label>
+                <input type="text" id="itemDescription" name="itemDescription" required>
+
+                <label for="itemQuantity">Item Quantity:</label>
+                <input type="number" id="itemQuantity" name="itemQuantity" required>
+
+                <label for="itemCategory">Item Category:</label>
+                <select id="itemCategory" name="itemCategory" required>
+                    <option value="recyclable">Recyclable</option>
+                    <option value="non-recyclable">Non-Recyclable</option>
+                </select>
+
+                <button type="submit">Schedule Pickup</button>
+            </form>
+        </div>
+
+        <div class="pickup-list">
+            <h2>Scheduled Pickups</h2>
+            <ul id="pickupList">
+               
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   
+    color: rgb(14, 13, 13);
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.user {
+    margin-bottom: 30px;
+}
+
+.user h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.user p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    
+
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
